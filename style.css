@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    /* color: #fff; */
+    font-size: 1.125rem
+    
+}
+body::before{
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #98EECCa3, #FBFFDCc0 ),url("images/background.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.survey-head #title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.survey-msg #description{
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+.container{
+    width: 100%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#title, #description{
+    margin-bottom: 10px;
+}
+.survey-form{
+    height: auto;
+    width: 100%;
+    /* background-color: #f9f5f6c7; */
+    background-color: #79e0ee9f;
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.876);
+}
+.survey-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 10px auto;
+    padding: 0.25rem;
+
+}
+.survey-item label,.survey-item input,#dropdown, .multi-selection label, #submit{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 6px 0px;
+    
+}
+.survey-item input{
+    padding: 6px 12px;
+}
+.option label input, .multi-selection label input{
+    width: 1.125rem;
+    min-height: 1.125rem;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+#comment{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    resize: none;
+}
+#submit{
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 1.125rem;
+    background-color: #47A992;
+    color: #fff;
+    transition: .3s ease-out;
+    
+}
+
+#submit:hover{
+    background-color: #6ce6c9;
+    color: black;
+    transform: translateY(-3px);
+    border: 2px solid black;
+}
+.name input:hover,
+.email input:hover,
+.name input:hover,
+#dropdown:hover,
+#comment:hover,
+.age input:hover
+{
+    /* box-shadow: 0 0 15px 0 #5a8f7a; */
+    outline: 2px solid black;
+}
+.name input:focus,
+.email input:focus,
+.name input:focus,
+#dropdown:focus,
+#comment:focus,
+.age input:focus{
+    box-shadow: 0 0 15px 0 #5a8f7a;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+

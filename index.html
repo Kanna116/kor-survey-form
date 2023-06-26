@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kor Industries Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="survey-head">
+            <h1 id="title">Kor Industries Survey Form</h1>
+        </div>
+        <div class="survey-msg">
+            <p id="description">Please feel to free fill in our survey. We appreciate your time</p>
+        </div>
+        <div class="survey-form">
+            <form action="" id="survey-form">
+                <div class="survey-item name">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="survey-item email">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="survey-item age">
+                    <label for="number" id="number-label">Age(Optional)</label>
+                    <input type="number" min="15" max="100" id="number" placeholder="18">
+                </div> 
+                <div class="survey-item dropdown">
+                    <label for="dropdown">Position you are searching for?</label>
+                    <select name="dropdown" id="dropdown" required >
+                        <option value="nothing" disabled >Choose wisely</option>
+                        <option value="internship">Internship</option>
+                        <option value="entry-level">Entry-level</option>
+                        <option value="full-time" selected>Full-time</option>
+                        <option value="remote">Remote</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div> 
+                <div class="survey-item option">
+                    <label for="option">Interesed in immediate join?</label>
+                    <label><input type="radio" name="option" value="yes" >Definitely sure</label>
+                    <label><input type="radio" name="option" value="maybe" >Maybe</label>
+                    <label><input type="radio" name="option" value="no" >Not sure</label>
+                </div>
+                <div class="survey-item multi-selection">
+                    <label for="checkbox-holder">In what are you proficient?</label>
+                    <label><input type="checkbox" value="HTML" name="skill">HTML</label>
+                    <label><input type="checkbox" value="CSS" name="skill">CSS</label>
+                    <label><input type="checkbox" value="JS" name="skill">JS</label>
+                    <label><input type="checkbox" value="JAVA" name="skill">JAVA</label>
+                    <label><input type="checkbox" value="PYTHON" name="skill">PYTHON</label>
+                    <label><input type="checkbox" value="SQL" name="skill">SQL</label>
+                    <label><input type="checkbox" value="DBS" name="skill">DBS</label>
+
+                </div>
+                <div class="survey-item comment">
+                    <label for="comment">Please ask us if you have any query?</label>
+                    <textarea name="comment" id="comment" cols="100" rows="6"></textarea>
+                </div>
+
+                <button class="form-item" id="submit" type="submit">Submit</button>
+
+
+
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<!--1. You should have a page title in an h1 element with an id of title -->
+<!-- You should have a short explanation in a p element with an id of description -->
+<!-- You should have a form element with an id of survey-form -->
+<!-- Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text -->
+<!-- Inside the form element, you are required to enter your email in an input field that has an id of email -->
+<!-- If you enter an email that is not formatted correctly, you will see an HTML5 validation error -->
+<!-- Inside the form, you can enter a number in an input field that has an id of number -->
+<!-- The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser). -->
+<!-- If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error -->
+<!-- For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label" -->
+<!-- For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field -->
+<!-- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from -->
+<!-- Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute -->
+<!-- Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute -->
+<!-- Inside the form element, you are presented with a textarea for additional comments -->
+<!--Inside the form element, you are presented with a button with id of submit to submit all the inputs-->
